@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.reven</groupId>
+		<artifactId>springcloud-demo</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>springcloud-demo-eureka-server</artifactId>
+	<name>springcloud-demo-eureka-server</name>
+	<url>http://maven.apache.org</url>
+	<description>注册中心主要要功能就是服务注册与服务发现。
+	每个应用启动时都会将自己的应用名称以及提供的接口注册到注册中心以提供给其他应用调用，
+	同时订阅发现其他应用提供的服务用于自己消费。注册中心维护着所有的服务注册信息。
+	</description>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<!--eureka server -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+		</dependency>
+	</dependencies>
+</project>
