@@ -9,5 +9,5 @@
 
 # 访问地址
 * 注册中心：http://localhost:8761/
-* 提供者测试地址：http://localhost:8080/hello
+* 提供者测试地址：http://localhost:7080/hello
 * 消费者测试地址：http://localhost:8081/hello
